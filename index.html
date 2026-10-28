@@ -65,14 +65,14 @@
       <div class="container-main">
         <section id="using-media-queries">
           <h2>Using media queries</h2>
-          <p>
+          <p class="para-content">
             Media queries allow you to apply CSS styles depending on a device's
             media type (such as print vs. screen) or other features or
             characteristics such as screen resolution or orientation, aspect
             ratio, browser viewport width or height, user preferences such as
             preferring reduced motion, data usage, or transparency.
           </p>
-          <p>Media queries are used for the following:</p>
+          <p class="para-content">Media queries are used for the following:</p>
           <ul class="ul-content">
             <li>
               To conditionally apply styles with the CSS @media, @custom-media
@@ -90,7 +90,7 @@
         </section>
         <section id="syntax">
           <h2>Syntax</h2>
-          <p>
+          <p class="para-content">
             A media query is composed of an optional media type and any number
             of media feature expressions, which may optionally be combined in
             various ways using logical operators. Media queries are
@@ -145,7 +145,7 @@
               into a single rule by separating them with commas.
             </li>
           </ul>
-          <p>
+          <p class="para-content">
             A media query computes to true when the media type (if specified)
             matches the device on which a document is being displayed and all
             media feature expressions compute as true. Queries involving unknown
@@ -154,13 +154,13 @@
         </section>
         <section id="media-types">
           <h2>Targeting media types</h2>
-          <p>
+          <p class="para-content">
             Media types describe the general category of a given device.
             Although websites are commonly designed with screens in mind, you
             may want to create styles that target special devices such as
             printers or audio-based screen readers.
           </p>
-          <p>
+          <p class="para-content">
             See media types for the list of available media types. Because media
             types describe devices in very broad terms, most of the
             originally-defined media types were deprecated, with just screen,
@@ -170,48 +170,50 @@
         </section>
         <section id="media-features">
           <h2>Targeting media features</h2>
-          <p>
+          <p class="para-content">
             Media features describe the specific characteristics of a given user
             agent, output device, or environment. For instance, you can apply
             specific styles to widescreen monitors, computers that use mice, or
             devices that are being used in low-light conditions.
           </p>
-          <p>Media features are either range or discrete.</p>
-          <p>
+          <p class="para-content">
+            Media features are either range or discrete.
+          </p>
+          <p class="para-content">
             Discrete features take their value from an enumerated set of
             possible keyword values. For example, the discrete orientation
             feature accepts either landscape or portrait.
           </p>
-          <p>
+          <p class="para-content">
             Many range features can be prefixed with "min-" or "max-" to express
             "minimum condition" or "maximum condition" constraints.
           </p>
-          <p>
+          <p class="para-content">
             With media query range features, you can either use the inclusive
             min- and max- prefixes or the more concise range syntax operators <=
             and >=.
           </p>
-          <p>
+          <p class="para-content">
             The range comparisons above are inclusive. To exclude the comparison
             value, use < and/or >.
           </p>
-          <p>
+          <p class="para-content">
             If you create a media feature query without specifying a value, the
             nested styles will be used as long as the feature's value is not 0
             or none.
           </p>
-          <p>
+          <p class="para-content">
             If a feature doesn't apply to the device on which the browser is
             running, expressions involving that media feature are always false.
           </p>
-          <p>
+          <p class="para-content">
             For more Media feature examples, please see the reference page for
             each specific feature.
           </p>
         </section>
         <section id="complex-media-queries">
           <h2>Creating complex media queries</h2>
-          <p>
+          <p class="para-content">
             Sometimes you may want to create a media query that depends on
             multiple conditions. This is where the logical operators come in:
             not, and, and only. Furthermore, you can combine multiple media
@@ -220,7 +222,7 @@
             queries evaluated as a logical or composition: interpreted as if
             each media query were within parentheses with an or between them.
           </p>
-          <p>
+          <p class="para-content">
             In the previous example, we saw the and operator used to group a
             media type with a media feature. The and operator can also combine
             multiple media features within a single media query. The not
@@ -233,20 +235,22 @@
             modern browsers.
           </p>
           <h3>Combining multiple types or features</h3>
-          <p>
+          <p class="para-content">
             The and keyword combines a media feature with a media type or other
             media features.
           </p>
           <h3>Testing for multiple queries</h3>
-          <p>
+          <p class="para-content">
             You can use a comma-separated list of media queries to apply styles
             when the user's device matches any one of various media types,
             features, or states.
           </p>
-          <p></p>
+          <p class="para-content"></p>
           <h3>Inverting a query's meaning</h3>
-          <p>The not keyword inverts the meaning of a single media query.</p>
-          <p>
+          <p class="para-content">
+            The not keyword inverts the meaning of a single media query.
+          </p>
+          <p class="para-content">
             The not negates only the media query it is applied to. The not,
             without parenthesis, negates all the features within the media query
             in which it is contained. This means, in a comma-separated list of
