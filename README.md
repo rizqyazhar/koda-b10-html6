@@ -11,3 +11,11 @@ Mengimplementasikan Media Query CSS
 2. Small & Medium Viewport
 
 ![dakingo-lp](/ss2.png)
+
+## Demo Gif
+
+1. Viewport large
+   ![dakingo-lp](/demo2.gif)
+
+2. Viewport medium & small
+   ![dakingo-lp](/demo.gif)
