@@ -63,7 +63,7 @@
     </nav>
     <main>
       <div class="container-main">
-        <section>
+        <section id="using-media-queries">
           <h2>Using media queries</h2>
           <p>
             Media queries allow you to apply CSS styles depending on a device's
@@ -88,7 +88,7 @@
             </li>
           </ul>
         </section>
-        <section>
+        <section id="syntax">
           <h2>Syntax</h2>
           <p>
             A media query is composed of an optional media type and any number
@@ -145,12 +145,14 @@
               into a single rule by separating them with commas.
             </li>
           </ul>
-          A media query computes to true when the media type (if specified)
-          matches the device on which a document is being displayed and all
-          media feature expressions compute as true. Queries involving unknown
-          media types are always false.
+          <p>
+            A media query computes to true when the media type (if specified)
+            matches the device on which a document is being displayed and all
+            media feature expressions compute as true. Queries involving unknown
+            media types are always false.
+          </p>
         </section>
-        <section>
+        <section id="media-types">
           <h2>Targeting media types</h2>
           <p>
             Media types describe the general category of a given device.
@@ -166,7 +168,7 @@
             media features instead.
           </p>
         </section>
-        <section>
+        <section id="media-features">
           <h2>Targeting media features</h2>
           <p>
             Media features describe the specific characteristics of a given user
@@ -207,7 +209,7 @@
             each specific feature.
           </p>
         </section>
-        <section>
+        <section id="complex-media-queries">
           <h2>Creating complex media queries</h2>
           <p>
             Sometimes you may want to create a media query that depends on
@@ -256,12 +258,14 @@
       <aside>
         <div>
           <h4>In this article</h4>
-          <ul>
-            <li>Syntax</li>
-            <li>Targeting media types</li>
-            <li>Targeting media features</li>
-            <li>Creating complex media queries</li>
-          </ul>
+          <div>
+            <a href="#using-media-queries">Using Media Queries</a>
+            <a href="#syntax">Syntax</a>
+            <a href="#media-types">Targeting media types</a>
+            <a href="#media-features">Targeting media features</a>
+
+            <a href="#complex-media-queries">Creating complex media queries</a>
+          </div>
         </div>
       </aside>
     </main>
