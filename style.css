@@ -111,6 +111,38 @@ h2 {
   margin-left: 40px;
 }
 
+aside {
+  width: 950px;
+  padding: 105px 20px 40px;
+  position: relative;
+}
+
+aside > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+}
+
+aside h4 {
+  font-size: 28px;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid rgb(88, 88, 88);
+  padding-left: 10px;
+}
+
+aside ul li {
+  padding: 10px 0;
+}
+
+aside ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 @media (width <= 768px) {
   nav {
     position: static;
@@ -159,5 +191,9 @@ h2 {
   form label,
   .input-search {
     width: 100%;
+  }
+
+  aside {
+    display: none;
   }
 }
