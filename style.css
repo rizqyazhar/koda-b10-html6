@@ -24,7 +24,7 @@ h1 {
   margin-right: 20px;
 }
 
-.container > ul {
+.container > div > ul {
   margin-left: 20px;
   display: inline-block;
 }
@@ -53,6 +53,11 @@ ul li {
   padding: 7px 21px;
 }
 
+form {
+  display: inline-block;
+  position: relative;
+}
+
 nav div:nth-child(2) form button {
   position: absolute;
   top: 6px;
@@ -68,10 +73,16 @@ form button svg {
   height: 16px;
 }
 
-nav div:nth-child(2) div {
+.search-user-box > div div:nth-child(2) {
+  display: inline-block;
   position: absolute;
-  right: -50px;
-  top: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+
+.search-user-box > div div:nth-child(2) p {
+  display: none;
 }
 
 @media (width <= 768px) {
@@ -83,16 +94,41 @@ nav div:nth-child(2) div {
     margin-bottom: 20px;
     display: block;
   }
-  .container > ul {
+
+  .container > div > ul {
     margin-left: 0px;
-    display: block;
   }
+
   ul li {
     display: block;
     margin-bottom: 10px;
   }
 
   .search-user-box {
-    display: none;
+    position: static;
+    margin-top: 10px;
+  }
+
+  .search-user-box > div div:nth-child(2) {
+    display: block;
+    position: static;
+    transform: translateY(0%);
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .search-user-box > div div:nth-child(2) p {
+    display: inline-block;
+    transform: translateY(-6px);
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .input-search {
+    width: 100%;
   }
 }
