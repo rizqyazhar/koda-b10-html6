@@ -105,9 +105,20 @@ h2 {
   margin-bottom: 10px;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
+.ul-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
 .ul-content li {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
   margin-left: 40px;
 }
 
@@ -126,6 +137,7 @@ aside > div {
 
 aside h4 {
   font-size: 28px;
+  margin-bottom: 10px;
 }
 
 aside > div > div {
@@ -197,5 +209,18 @@ aside > div a:hover {
 
   aside {
     display: none;
+  }
+
+  .container-main {
+    flex-grow: 1;
+    padding: 0 40px 100px 40px;
+  }
+
+  .ul-content li {
+    margin-left: 20px;
+  }
+
+  section {
+    padding-top: 40px;
   }
 }
